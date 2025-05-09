@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - comet = comet_ml.scripts.comet:main
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - configobj
-    - dulwich >=0.20.6, !=0.20.33
+    - dulwich >=0.20.6,!=0.20.33
     - everett >=1.0.1,<3.2.0
     - importlib-metadata
     - jsonschema >=2.6.0,!=3.1.0
@@ -46,6 +46,7 @@ test:
     - comet_ml
   commands:
     - pip check
+    - comet --help
   requires:
     - pip
     - python {{ python_min }}
