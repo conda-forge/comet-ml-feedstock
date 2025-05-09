@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - comet = comet_ml.scripts.comet:main
@@ -46,6 +46,7 @@ test:
     - comet_ml
   commands:
     - pip check
+    - comet --help
   requires:
     - pip
     - python {{ python_min }}
