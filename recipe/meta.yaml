@@ -1,5 +1,5 @@
 {% set name = "comet-ml" %}
-{% set version = "3.49.12" %}
+{% set version = "3.50.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/comet_ml-{{ version }}.tar.gz
-  sha256: c5234a3cf627477bf05d8d10779d62b5d8050bf4039d64e19e2090af108f5cdd
+  sha256: 85fed4030c3b5ed719b47c2ccc5c4ee4b0f92244cf9ae6bd145ff7cfa08b426e
 
 build:
   noarch: python
