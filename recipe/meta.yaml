@@ -1,13 +1,13 @@
 {% set name = "comet-ml" %}
-{% set version = "3.53.2" %}
+{% set version = "3.54.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/84/6c/9101ef6d1f1c1272749b4692879d6ad24f37970488a9f6ed382dbec0b15f/comet_ml-{{ version }}.tar.gz
-  sha256: f0e11cb82efd29fe024c2c4a93320c95ef73a61dbb52f13d7f53f75add3f7863
+  url: https://files.pythonhosted.org/packages/3b/b8/5192d82adaee61c910731eecd76d1fed4e54521225744ee677272062264e/comet_ml-{{ version }}.tar.gz
+  sha256: 11371115fd703c662b6e48e49d3b79a26a950b8fcd8616c5902a442ee639e18d
 
 build:
   noarch: python
