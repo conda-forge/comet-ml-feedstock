@@ -3,7 +3,7 @@ About comet-ml-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/comet-ml-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.comet.com
+Home: https://www.comet.com/
 
 Package license: MIT
 
