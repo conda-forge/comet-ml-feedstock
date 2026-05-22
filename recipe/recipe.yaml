@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: comet-ml
-  version: "3.57.4"
+  version: "3.58.0"
   python_min: "3.10"
 
 package:
@@ -10,12 +10,12 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/7f/c6/3885cbc9fe99617ee492403d464906dc15bf17943397c31022fba0997e73/comet_ml-${{ version }}.tar.gz
-  sha256: 42b06f5b473ea270f665409477983f52fa5356ee88e9447f07fc610e47850b5e
+  url: https://files.pythonhosted.org/packages/c1/95/13dce1808d6101b6d341e59209f7a913d255385fd4b591b91808326508b3/comet_ml-${{ version }}.tar.gz
+  sha256: 9a02fa0b768c321666d66b7e3038fecae4b2d76aaed70998ad46e3647cc56c1c
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     entry_points:
