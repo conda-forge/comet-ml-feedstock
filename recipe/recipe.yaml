@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: comet-ml
   version: "3.58.8"
-  python_min: "3.10"
 
 package:
   name: ${{ name|lower }}
@@ -15,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     entry_points:
@@ -53,7 +52,9 @@ tests:
       imports:
         - comet_ml
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - script:
       - pip check
       - comet --help
@@ -74,5 +75,6 @@ about:
   license_file: README.rst
 
 extra:
+  feedstock-name: comet-ml
   recipe-maintainers:
     - jeongseok-meta
